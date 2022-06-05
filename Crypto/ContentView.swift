@@ -9,19 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(){
-            Text("Crypto")
-                .font(.title)
-                .fontWeight(.heavy)
-            Spacer()
-        }
-        .offset(y:-250)
-        .padding()
-    }
+        TabView() {
+            HomeView()
+                   .tabItem {
+                       Image(systemName: "house.fill")
+                       Text("Home")
+               }
+            MarketView()
+                   .tabItem {
+                       Image(systemName: "chart.bar.fill")
+                       Text("Market")
+               }
+            WishlistView()
+                   .tabItem {
+                       Image(systemName: "heart.fill")
+                       Text("Wishlist")
+               }
+           }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }
