@@ -18,16 +18,16 @@ struct ContentView: View {
                            Image(systemName: "house.fill")
                            Text("Home")
                    }
-                MarketView(coin: ad.coin)
-                       .tabItem {
-                           Image(systemName: "chart.bar.fill")
-                           Text("Market")
-                   }
-                WishlistView()
-                       .tabItem {
-                           Image(systemName: "heart.fill")
-                           Text("Wishlist")
-                   }
+//                MarketView(coin: ad.coin)
+//                       .tabItem {
+//                           Image(systemName: "chart.bar.fill")
+//                           Text("Market")
+//                   }
+//                WishlistView()
+//                       .tabItem {
+//                           Image(systemName: "heart.fill")
+//                           Text("Wishlist")
+//                   }
             }
             }
         }
