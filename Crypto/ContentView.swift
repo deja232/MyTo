@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var mm: MarketModel
+//    let coin : Coin
     var body: some View {
         NavigationView{
         VStack{
@@ -36,7 +37,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
-        ContentView()
+            ContentView()
         }
         .environmentObject(ad.marketm)
     }

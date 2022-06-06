@@ -35,6 +35,7 @@
 		269EFC3E284E2932000ADDC7 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EFC3D284E2932000ADDC7 /* GlobalData.swift */; };
 		269EFC40284E2CC6000ADDC7 /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EFC3F284E2CC6000ADDC7 /* MarketService.swift */; };
 		269EFC42284E4041000ADDC7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EFC41284E4041000ADDC7 /* Profile.swift */; };
+		269EFC44284E588E000ADDC7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EFC43284E588E000ADDC7 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		269EFC3D284E2932000ADDC7 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		269EFC3F284E2CC6000ADDC7 /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
 		269EFC41284E4041000ADDC7 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		269EFC43284E588E000ADDC7 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		2639757E283C68E900CE52F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				269EFC43284E588E000ADDC7 /* Home.swift */,
 				269EFC3B284E2640000ADDC7 /* StatisticView.swift */,
 				269EFC35284DFD8A000ADDC7 /* ChartView.swift */,
 				269EFC33284DEC53000ADDC7 /* Details.swift */,
@@ -263,6 +266,7 @@
 				26932370284CAE700044F906 /* MarketView.swift in Sources */,
 				26397579283C68E600CE52F1 /* CryptoApp.swift in Sources */,
 				26932374284CD8570044F906 /* EditProfile.swift in Sources */,
+				269EFC44284E588E000ADDC7 /* Home.swift in Sources */,
 				269EFC36284DFD8A000ADDC7 /* ChartView.swift in Sources */,
 				269EFC23284D9B0B000ADDC7 /* apiData.swift in Sources */,
 				269EFC15284D5728000ADDC7 /* Color.swift in Sources */,
