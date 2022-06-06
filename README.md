@@ -1,2 +1,2 @@
 # MyTo
-Bentar ya pak, masih bingung
+> Bentar ya pak, masih bingung
