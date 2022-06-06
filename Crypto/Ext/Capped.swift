@@ -19,7 +19,7 @@ extension Double{
     
     func priceee() -> String{
         let num = NSNumber(value: self)
-        return Cap2.string(from: num) ?? "$0.00"
+        return Cap2.string(from: num) ?? "Rp.0.00"
     }
     
     private var Cap6: NumberFormatter{
@@ -33,7 +33,7 @@ extension Double{
     
     func pricee() -> String{
         let num = NSNumber(value: self)
-        return Cap6.string(from: num) ?? "$0.00"
+        return Cap6.string(from: num) ?? "Rp.0.00"
     }
     
     func percentagee() -> String{
