@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
-
-struct Profile: View {
+struct Profil: View {
+    @State private var draftProfile = Profile.default
     var body: some View {
+        NavigationView{
         VStack{
             VStack(){
             Text("Profile")
@@ -19,7 +20,7 @@ struct Profile: View {
                     .frame(width:150, height: 90)
                     .offset(y: -200)
                     .foregroundColor(.orange)
-            Text("Username")
+                Text(draftProfile.username)
                     .font(.system(size: 25))
                     .fontWeight(.semibold)
                     .offset(y: -170)
@@ -31,7 +32,7 @@ struct Profile: View {
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
                     .offset(x: -130, y: -100)
-            Text("March 12")
+                Text(draftProfile.birthday)
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .offset(x: -117, y: -100)
@@ -40,7 +41,7 @@ struct Profile: View {
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
                     .offset(x: -133, y: -100)
-            Text("Citraland")
+                Text(draftProfile.address)
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .offset(x: -117, y: -100)
@@ -49,29 +50,30 @@ struct Profile: View {
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
                     .offset(x: -139, y: -100)
-            Text("0853726129837")
+                Text(draftProfile.Number)
                     .font(.system(size: 20))
                     .fontWeight(.bold)
                     .offset(x: -80, y: -100)
 
         }
-            Button(action: {print("Loading")}){
-            HStack{
-                Text("Edit")
+            NavigationLink{
+                EditProfile(pro: $draftProfile)
+            } label: {
+                HStack{
+                    Text("Edit")
+                }
+                .frame(width: 300, height: 50)
+                .background(Color.blue)
+                .cornerRadius(20)
+                .foregroundColor(.white)
+                .padding()
             }
         }
-            .frame().frame(width: 300, height: 50)
-            .background(Color.blue)
-            .cornerRadius(20)
-            .foregroundColor(.white)
-            .padding()
-            
-        }
 }
 }
-
-struct Profile_Previews: PreviewProvider {
+}
+struct Profil_Previews: PreviewProvider {
     static var previews: some View {
-        Profile()
+        Profil()
     }
 }

@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct CryptoApp: App {
+    
+    @StateObject private var mm = MarketModel()
+    
     var body: some Scene {
         WindowGroup {
+            NavigationView{
             ContentView()
-        }
+            }
+            .environmentObject(mm)
+            }
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
+        ZStack{
+        Color.theme.back.ignoresSafeArea()
         ScrollView{
             HStack {
                 VStack(){
@@ -45,7 +47,7 @@ struct HomeView: View {
                     .offset(y:-50)
             }
             HStack(){
-                Text("MY Favorite Crypto")
+                Text("MY Crypto")
                     .fontWeight(.heavy)
                     .padding()
                     Spacer()
@@ -257,6 +259,7 @@ struct HomeView: View {
             }
             .padding()
         }
+    }
     }
 
 struct HomeView_Previews: PreviewProvider {
